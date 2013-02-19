@@ -6,6 +6,7 @@
     <%= stylesheet_link_tag "konacha", :debug => false %>
     <%= javascript_include_tag "mocha", "konacha/parent", :debug => false %>
     <%= javascript_include_tag("konacha/runner", :debug => false) if @run_mode.runner? %>
+    <%= javascript_include_tag("konacha/unity", :debug => false) %>
   </head>
   <body>
     <% @specs.each do |spec| %>
